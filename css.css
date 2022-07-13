@@ -1,0 +1,615 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('./fonts/Roboto-LightItalic.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('./fonts/RobotoSlab-VariableFont_wght.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Red Hat Text';
+    src: url('fonts/RedHatText-VariableFont_wght.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    max-width: 1440px;
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+nav {
+    padding: 10px 12px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* =========local========== */
+
+.local_pages{
+    right: 0px;
+    transform: translateX(450px);
+    position: absolute;
+    width: 450px;
+    height: 800px;
+    background-color: grey;
+    transition: all 1s ease-in-out;
+    padding: 20px;
+}
+
+#span{
+    display: block;
+    font-size: 60px;
+    font-weight: bold;
+    color: red;
+    text-align: end;
+    cursor: cell;
+}
+
+/* ==========local end========= */
+
+.icon {
+    width: 100%;
+}
+
+.title {
+    width: 100%;
+}
+
+.title p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 57px;
+    line-height: 67px;
+    text-align: center;
+    letter-spacing: -0.354701px;
+
+    color: #282828;
+}
+
+.icons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.icons button {
+    padding: 0 20px;
+    background: none;
+    border: none;
+}
+
+.section1 {
+    width: 100%;
+    height: 796px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(./icons/img/bg\ 1.png);
+    /* background-size: cover; */
+}
+
+.section1 p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    letter-spacing: -0.354701px;
+    padding-left: 103px;
+    color: #FFFFFF;
+}
+
+.section1 button {
+    margin-top: 38px;
+    width: 214px;
+    height: 54px;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: -0.354701px;
+    margin-left: 103px;
+    color: #0e0d0d;
+    background: #FFFFFF
+}
+
+.section2 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 49px;
+}
+
+.sec2_1 {
+    width: 384px;
+    height: 565px;
+    background-image: url(./icons/img/men\ 2.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sec2_1{
+    width: 384px;
+    height: 565px;
+    position: relative;
+    overflow: hidden;
+   
+}
+.hover1{
+    width: 384px;
+    height: 565px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.hover2{
+    width: 384px;
+    height: 565px;
+    background-color: rgba(128, 128, 128, 0.187);
+    position: absolute;
+    transition: all 1s ease-in-out;
+    z-index: 1;
+    top: -565px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sec2_1:hover .hover2{
+    top: 0;
+}
+
+
+.sec2_1 a {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 47px;
+    text-align: center;
+    letter-spacing: -0.354701px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.sec2_2 {
+    width: 384px;
+    height: 565px;
+    background-image: url(./icons/img/women\ 1.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sec2_2{
+    width: 384px;
+    height: 565px;
+    position: relative;
+    overflow: hidden;
+}
+.div1{
+    width: 384px;
+    height: 565px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.div2{
+    width: 384px;
+    height: 565px;
+    background-color: rgba(128, 128, 128, 0.187);
+    position: absolute;
+    transition: all 1s ease-in-out;
+    z-index: 1;
+    top: -565px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.sec2_2:hover .div2{
+    top: 0;
+}
+
+.sec2_2 a {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 47px;
+    text-align: center;
+    letter-spacing: -0.354701px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+
+.sec2_3 {
+    width: 384px;
+    height: 565px;
+    background-image: url(./icons/img/asthetics\ 1.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+.sec2_3{
+    width: 384px;
+    height: 565px;
+    position: relative;
+    overflow: hidden;
+}
+.car1{
+    width: 384px;
+    height: 565px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.car2{
+    width: 384px;
+    height: 565px;
+    background-color: rgba(128, 128, 128, 0.187);
+    position: absolute;
+    transition: all 1s ease-in-out;
+    z-index: 1;
+    top: -565px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.sec2_3:hover .car2{
+    top: 0;
+}
+
+.sec2_3 a {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 47px;
+    text-align: center;
+    letter-spacing: -0.354701px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.section3 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 79px 119px 0 79px;
+}
+
+.sec3_1 {
+    width: 228px;
+    height: 288px;
+    background-image: url(./icons/img/1\ 1.png);
+
+}
+
+.sec3_2 {
+    width: 228px;
+    height: 288px;
+    background-image: url(./icons/img/2\ 1.png);
+}
+
+.sec3_3 {
+    width: 228px;
+    height: 288px;
+    background-image: url(./icons/img/3\ 1.png);
+}
+
+.sec3_4 {
+    width: 228px;
+    height: 288px;
+    background-image: url(./icons/img/4\ 1.png);
+
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 9px 141px 0 114px;
+}
+
+.text p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: -0.354701px;
+
+    color: #979696;
+}
+
+.btnlar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 141px 0 114px;
+}
+
+.btn {
+
+    padding: 105px 577px 22px 576px;
+}
+
+.btn button {
+    width: 214px;
+    height: 54px;
+    background: #282828;
+    color: white;
+}
+
+.section4 {
+    width: 1440px;
+    height: auto;
+    padding: 27px;
+}
+
+.section5 {
+    padding-top: 27px;
+    width: 80%;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.sec5_1 {
+    padding-left: 55px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: left;
+}
+
+.sec5_1 p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: -0.354701px;
+
+    color: #323232;
+}
+
+.sec5_1 span {
+    padding-top: 9px;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: -0.354701px;
+
+    color: #6D6D6D;
+}
+
+
+.sec5_2 {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: left;
+}
+
+.sec5_2 p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: -0.354701px;
+
+    color: #323232;
+}
+
+.sec5_2 span {
+    padding-top: 11px;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: -0.354701px;
+
+    color: #6D6D6D;
+}
+
+
+.sec5_3 {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: left;
+}
+
+.sec5_3 p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: -0.354701px;
+
+    color: #323232;
+}
+
+.sec5_3 span {
+    padding-top: 9px;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: -0.354701px;
+
+    color: #6D6D6D;
+}
+form {
+    padding-top: 12px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+input {
+    width: 250px;
+    height: 50px;
+}
+
+.sec5_3 button {
+    margin-top: 20px;
+    width: 133px;
+    height: 45px;
+    background-color: black;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: -0.354701px;
+
+    color: #FFFFFF;
+}
+
+.divlar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.car{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    padding-left: 100px;
+}
+
+.car button{
+    width: 100px;
+    height: 20px;
+    background-color: aqua;
+    border: none;
+    border-radius: 20px;
+    margin:0 5px;
+}
+.car input{
+    width: 50px;
+    height: 20px;
+}
+
+.plus_minus{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-right: 100px;
+  
+}
+.plus_minus button{
+    width: 100px;
+    height: 20px;
+    background-color: aqua;
+    border: none;
+    border-radius: 20px;
+    margin:0 5px;
+}
+
+.plus_minus input{
+    width: 50px;
+    height: 20px;
+}
+
+.crud_plus_minus{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    bottom: 10px;
+    padding-right: 100px;
+   
+}
+.crud_plus_minus button{
+    width: 100px;
+    height: 20px;
+    background-color: aqua;
+    border: none;
+    border-radius: 20px;
+    margin:0 5px;
+    
+}
+
+.crud_plus_minus input{
+    width: 50px;
+    height: 20px;
+}
+
+
+.footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer button{
+    width: 1440px;
+    height: 54px;
+    background-color: black;
+    color: white;
+}
+
